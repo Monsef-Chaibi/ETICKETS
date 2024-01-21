@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Monsef Portfolio</title>
+    <title>ETICKETS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -21,26 +21,27 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="icon" type="image/x-icon" href="images/coded.png">
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Monsef</a>
+      <a class="navbar-brand" href="index.html">ETICKETS</a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item"><a href="#home-section" onclick="myFunction()" class="nav-link"><span>Home</span></a></li>
-          <li class="nav-item"><a href="#about-section" onclick="myFunction()"  class="nav-link"><span>About Me</span></a></li>
-          <li class="nav-item"><a href="#resume-section" onclick="myFunction()"  class="nav-link"><span>Resume</span></a></li>
-          <li class="nav-item"><a href="#services-section" onclick="myFunction()" class="nav-link"><span>Services</span></a></li>
-          <li class="nav-item"><a href="#skills-section" onclick="myFunction()" class="nav-link"><span>Skills</span></a></li>
+      <div style="text-align: right;" class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto"  style="font-family: 'Almarai';letter-spacing: 0;">
+            <li class="nav-item"><a href="#services-section" onclick="myFunction()" class="nav-link"><span>اتصل بنا</span></a></li>
+            <li class="nav-item"><a href="#resume-section" onclick="myFunction()"  class="nav-link"><span>لماذا نحن</span></a></li>
+            <li class="nav-item"><a href="#about-section" onclick="myFunction()"  class="nav-link"><span>التذاكر </span></a></li>
+            <li class="nav-item"><a href="#home-section" onclick="myFunction()" class="nav-link"><span>الرئيسية</span></a></li>
+          <!-- <li class="nav-item"><a href="#skills-section" onclick="myFunction()" class="nav-link"><span>Skills</span></a></li>
           <li class="nav-item"><a href="#projects-section" onclick="myFunction()" class="nav-link"><span>Projects</span></a></li>
-          <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>Contact</span></a></li>
+          <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>Contact</span></a></li> -->
         </ul>
       </div>
     </div>
@@ -51,31 +52,32 @@
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/.png);">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/logo.png);max-height: 750px;left:-600px">
                 <div class="overlay"></div>
               </div>
               <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                    <span class="subheading">Hello!</span>
-                    <h1 class="mb-4 mt-3">I am <span>Monsef Chaibi</span></h1>
-                    <h2 class="mb-4">Web Developer</h2>
+                <div class="text" style="font-family: 'Almarai';">
+                    <span class="subheading" style="font-family: 'Almarai';letter-spacing: 0;font-size: 22px;">مرحبا بك</span>
+                    <h1 class="mb-4 mt-3"> في <span>أفضل</span> موقع</h1>
+                    <h2 class="mb-4">لبيع التذاكر</h2>
                 </div>
               </div>
             </div>
           </div>
       </div>
-
+      
       <div class="slider-item">
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/.png);">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/logo.png);max-height: 750px;left:-600px">
                 <div class="overlay"></div>
               </div>
               <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                    <span class="subheading">Hello!</span>
-                    <h1 class="mb-4 mt-3">I am a <span>Web Developer </span></h1>
+                <div class="text"  style="font-family: 'Almarai';">
+                    <span class="subheading" style="letter-spacing: 0;font-size: 22px;">! نتوفر </span>
+                    <h1 class="mb-4 mt-3">على جميع <span>التذاكر   </span></h1>
+                    <h2 class="mb-4">الحصرية و الجديدة</h2>
                 </div>
               </div>
             </div>
@@ -83,6 +85,32 @@
       </div>
     </div>
 </section>
+
+<script>
+    // Function to toggle visibility based on screen width
+    function toggleVisibility() {
+      var elements = document.querySelectorAll('.one-third');
+  
+      // Set the minimum width for the element to be visible
+      var minWidthToShow = 992;
+  
+      elements.forEach(function(element) {
+        var screenWidth = window.innerWidth;
+  
+        if (screenWidth > minWidthToShow) {
+          element.style.display = 'block';
+        } else {
+          element.style.display = 'none';
+        }
+      });
+    }
+  
+    // Initial call to set visibility on page load
+    toggleVisibility();
+  
+    // Set interval to check and update visibility every 1 second
+    setInterval(toggleVisibility, 1000);
+  </script>
 
 <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     <div class="container">
