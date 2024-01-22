@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+    <script src="https://kit.fontawesome.com/f8183aa58e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -35,16 +35,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">ETICKETS</a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" style="font-family: 'Almarai';letter-spacing: 0;color: rgba(255, 255, 255, 0.5) ;">
+        القائمة
+        <span class="oi oi-menu" ></span> 
       </button>
 
       <div style="text-align: right;" class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto"  style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold;">
-            <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>اتصل بنا</span></a></li>
-            <li class="nav-item"><a href="#services-section" onclick="myFunction()"  class="nav-link"><span>لماذا نحن</span></a></li>
-            <li class="nav-item"><a href="#about-section" onclick="myFunction()"  class="nav-link"><span>التذاكر </span></a></li>
+        <ul dir="rtl" class="navbar-nav nav ml-auto"  style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold;">
             <li class="nav-item"><a href="#home-section" onclick="myFunction()" class="nav-link"><span>الرئيسية</span></a></li>
+            <li class="nav-item"><a href="#about-section" onclick="myFunction()"  class="nav-link"><span>التذاكر </span></a></li>
+            <li class="nav-item"><a href="#services-section" onclick="myFunction()"  class="nav-link"><span>لماذا نحن</span></a></li>
+            <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>اتصل بنا</span></a></li>
           <!-- <li class="nav-item"><a href="#skills-section" onclick="myFunction()" class="nav-link"><span>Skills</span></a></li>
           <li class="nav-item"><a href="#projects-section" onclick="myFunction()" class="nav-link"><span>Projects</span></a></li>
           <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>Contact</span></a></li> -->
@@ -64,9 +65,9 @@
               <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text" style="font-family: 'Almarai';">
                   
-                    <h2 class="mb-4" id="tit">مرحبا بك</h2>
-                    <h1 class="mb-4 mt-3"> في منصة  <span>  بيع </span>تذاكر</h1>
-                    <h2 class="mb-4">مباريات  كرة القدم </h2>
+                    <h2 class="mb-4" id="tit01">منصة</h2>
+                    <h1 class="mb-4 mt-3">بيع<span> تذاكر  </span>مباريات</h1>
+                    <h2 class="mb-4">  كرة القدم </h2>
                 </div>
               </div>
             </div>
@@ -195,20 +196,16 @@
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 10,
+      centeredSlides: true,  // Center the active slide
+      initialSlide: 1,      // Set the initial slide to the second one (index 1)
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      on: {
-        slideChange: function () {
-          var body = document.body;
-          // Check if the active slide is not the first one
-         
-            body.style.overflowX = 'hidden';
-          
-        },
-      },
     });
+  
+    // Set overflowX to hidden on page load
+    document.body.style.overflowX = 'hidden';
   </script>
   
 
@@ -604,38 +601,45 @@
 	
 			<div class="row d-flex contact-info mb-5">
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-whatsapp"></span>
+					<div class="align-self-stretch box p-4 text-center" >
+                        <a href="https://wa.me/97338100306" target="_blank">
+						<div class="icon d-flex align-items-center justify-content-center" id="send">
+                            <span class="icon-whatsapp" ></span>
 						</div>
+                        </a>
 						<h3 class="mb-4">Whatsapp</h3>
                         <p><a id="textme" href="https://wa.me/97338100306" target="_blank">+97338100306</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-twitter"></span>
-
+                        <a href="https://wa.me/97338100306" target="_blank" >
+						<div class="icon d-flex align-items-center justify-content-center" id="send">
+							<i class="fa-brands fa-x-twitter" style="font-size: 22px;"></i>
 						</div>
+                        </a>
 						<h3 class="mb-4">X</h3>
 						<p><a id="textme"  href="https://x.com/_etickets" target="_blank">ETICKETS</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
+                        <a href="https://wa.me/97338100306" target="_blank">
+						<div class="icon d-flex align-items-center justify-content-center" id="send">
+							<span class="fa fa-envelope"></span>
 						</div>
+                        </a>
 						<h3 class="mb-4">Email Address</h3>
 						<p><a id="textme"  href="mailto:info@eticketsapp.com"  target="_blank">info@eticketsapp.com</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
+                        <a href="https://wa.me/97338100306" target="_blank">
+						<div class="icon d-flex align-items-center justify-content-center" id="send">
 							<span class="icon-instagram"></span>
 						</div>
+                        </a>
 						<h3 class="mb-4">Instagram</h3>
 						<p><a id="textme"  href="https://www.instagram.com/_etickets" target="_blank">@_etickets</a></p>
 					</div>
@@ -644,7 +648,7 @@
 		</div>
 	</section>
 	
-    <footer class="ftco-footer ftco-section">
+    <footer class="ftco-footer ftco-section" style="height: 50px;">
         <div class="container">
           <div class="row mb-5">
           <div class="row">
