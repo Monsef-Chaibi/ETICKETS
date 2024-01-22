@@ -40,9 +40,9 @@
       </button>
 
       <div style="text-align: right;" class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto"  style="font-family: 'Almarai';letter-spacing: 0;">
-            <li class="nav-item"><a href="#services-section" onclick="myFunction()" class="nav-link"><span>اتصل بنا</span></a></li>
-            <li class="nav-item"><a href="#resume-section" onclick="myFunction()"  class="nav-link"><span>لماذا نحن</span></a></li>
+        <ul class="navbar-nav nav ml-auto"  style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold;">
+            <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>اتصل بنا</span></a></li>
+            <li class="nav-item"><a href="#services-section" onclick="myFunction()"  class="nav-link"><span>لماذا نحن</span></a></li>
             <li class="nav-item"><a href="#about-section" onclick="myFunction()"  class="nav-link"><span>التذاكر </span></a></li>
             <li class="nav-item"><a href="#home-section" onclick="myFunction()" class="nav-link"><span>الرئيسية</span></a></li>
           <!-- <li class="nav-item"><a href="#skills-section" onclick="myFunction()" class="nav-link"><span>Skills</span></a></li>
@@ -63,9 +63,10 @@
               </div>
               <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text" style="font-family: 'Almarai';">
-                    <span class="subheading" style="font-family: 'Almarai';letter-spacing: 0;font-size: 22px;">مرحبا بك</span>
-                    <h1 class="mb-4 mt-3"> في <span>أفضل</span> موقع</h1>
-                    <h2 class="mb-4">لبيع التذاكر</h2>
+                  
+                    <h2 class="mb-4" id="tit">مرحبا بك</h2>
+                    <h1 class="mb-4 mt-3"> في منصة  <span>  بيع </span>تذاكر</h1>
+                    <h2 class="mb-4">مباريات  كرة القدم </h2>
                 </div>
               </div>
             </div>
@@ -81,9 +82,9 @@
               </div>
               <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text"  style="font-family: 'Almarai';">
-                    <span class="subheading" style="letter-spacing: 0;font-size: 22px;">! نتوفر </span>
-                    <h1 class="mb-4 mt-3">على جميع <span>التذاكر   </span></h1>
-                    <h2 class="mb-4">الحصرية و الجديدة</h2>
+                    <h2 class="mb-4" id="tit"> وجهتك </h2>
+                    <h1 class="mb-4 mt-3">الأولى <span> والآمنة    </span> لشراء</h1>
+                    <h2 class="mb-4"> التذاكر </h2>
                 </div>
               </div>
             </div>
@@ -122,8 +123,8 @@
     <div class="container" style="margin-top: 60px;">
         <div class="row d-flex">
             <div class="col-md-6">
-                <!-- <h2 style="text-align: center;">التذاكر</h2> -->
-                <div class="swiper-container">
+                <h2  id="tit1" >التذاكر</h2> 
+                <div class="swiper-container" style="margin-top: 15%;">
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
@@ -211,7 +212,7 @@
   </script>
   
 
-<section class="ftco-section ftco-no-pb" id="resume-section">
+<!-- <section class="ftco-section ftco-no-pb" id="resume-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -265,44 +266,47 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="ftco-section" id="services-section">
     <div class="container">
         <div class="row justify-content-center py-5 mt-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Services</h1>
-                <h2 class="mb-4">Services</h2>
+                <!-- <h1 class="big big-2">Services</h1> -->
+                <h2 class="mb-4"   style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold;"">لماذا نحن</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a class="services-1">
+            <div class="col-md-4 text-center d-flex ftco-animate" >
+                <a class="services-1" style="border-radius: 9%;">
                     <span class="icon">
-                        <i class="flaticon-analysis"></i>
+                        <img src="images/agent-de-service-a-la-clientele.png"  style="width: 100px;" alt="">
+
                     </span>
                     <div class="desc">
-                        <h3 class="mb-5">Web Design</h3>
+                        <h3 class="mb-5"   style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold; font-size: large;" >خدمة العملاء</h3>
                     </div>
                 </a>
             </div>
+         
             <div class="col-md-4 text-center d-flex ftco-animate">
-                <a class="services-1">
+                <a class="services-1" style="border-radius: 9%;">
                     <span class="icon">
-                        <i class="flaticon-flasks"></i>
+                        <img src="images/icons8-fast-delivery-64.png"  style="width: 100px;" alt="">
                     </span>
                     <div class="desc">
-                        <h3 class="mb-5">Application Development</h3>
+                        <h3 class="mb-5"   style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold; font-size: large;" >استلام فوري</h3>
                     </div>
                 </a>
             </div>
+           
             <div class="col-md-4 text-center d-flex ftco-animate">
-                <a class="services-1">
+                <a class="services-1" style="border-radius: 9%;">
                     <span class="icon">
-                        <i class="flaticon-ideas"></i>
+                       <img src="images/ticket.png" style="width: 100px;" alt="">
                     </span>
                     <div class="desc">
-                        <h3 class="mb-5">Web Development</h3>
+                        <h3 class="mb-5"   style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold; font-size: large;" >تذاكر مضمونة</h3>
                     </div>
                 </a>
             </div>
@@ -343,7 +347,7 @@
     </div>
 </section>
 
-
+<!-- 
 <section class="ftco-section" id="skills-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
@@ -587,14 +591,14 @@
         </div>
     </div>
 </section>
-
+ -->
 
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
+					<!-- <h1 class="big big-2">Contact</h1> -->
+					<h2 class="mb-4"   style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold;">اتصل بنا</h2>
 				</div>
 			</div>
 	
@@ -602,19 +606,20 @@
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
+                            <span class="icon-whatsapp"></span>
 						</div>
-						<h3 class="mb-4">Address</h3>
-						<p>Morocco</p>
+						<h3 class="mb-4">Whatsapp</h3>
+                        <p><a id="textme" href="https://wa.me/97338100306" target="_blank">+97338100306</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
+							<span class="icon-twitter"></span>
+
 						</div>
-						<h3 class="mb-4">Phone Number</h3>
-						<p><a href="tel:+212612535203">+212612535203</a></p>
+						<h3 class="mb-4">X</h3>
+						<p><a id="textme"  href="https://x.com/_etickets" target="_blank">ETICKETS</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -623,23 +628,36 @@
 							<span class="icon-paper-plane"></span>
 						</div>
 						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:win.monsef@gmail.com">win.monsef@gmail.com</a></p>
+						<p><a id="textme"  href="mailto:info@eticketsapp.com"  target="_blank">info@eticketsapp.com</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
+							<span class="icon-instagram"></span>
 						</div>
-						<h3 class="mb-4">GitHub</h3>
-						<p><a href="https://github.com/Monsef-Chaibi" target="_blank">https://github.com/Monsef-Chaibi</a></p>
+						<h3 class="mb-4">Instagram</h3>
+						<p><a id="textme"  href="https://www.instagram.com/_etickets" target="_blank">@_etickets</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	</footer>
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+          <div class="row">
+            <div class="col-md-12 text-center">
+  
+              <p id="foot" style="font-family: 'Almarai';letter-spacing: 0;font-weight: bold;">
+                    ETICKETS   جميع الحقوق   &copy; <script>document.write(new Date().getFullYear());</script> محفوظة ل 
+               </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     
   
 

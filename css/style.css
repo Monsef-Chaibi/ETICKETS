@@ -103,7 +103,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   color: #ffbd39; /* Color on hover */
   font-size: 1.1em; /* Increase font size on hover */
 }
-
+#textme:hover {
+  color: #ffbd39;
+  font-size: 1.1em;
+}
 
 .card-image {
   border-radius: 10px;
@@ -201,10 +204,60 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   width:100%;
   border-radius: 10px;
   height: 400px;
-  
+
   @media only screen and (max-width: 600px) {
     height: 300px; /* Set height to 300px for phones */
   }
+}
+
+
+/* styles.css */
+
+#tit {
+  text-align: right;
+  margin-right: 20px;
+  font-family: 'Almarai';
+  letter-spacing: 0;
+  font-size: 22px;
+  color: #ffbd39;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  #tit {
+    text-align: center; /* Set text to center for phones */
+    margin: 0; /* Remove margin for center alignment */
+  }
+}
+#tit1 {
+  font-family: 'Almarai';
+  font-weight: bold;
+
+}
+@media only screen and (min-width: 601px) {
+  /* Styles for screens larger than 600px (non-phone screens like laptops) */
+  #tit1 {
+      margin-left: 95%;
+      font-size: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Styles for screens larger than 600px (non-phone screens like laptops) */
+  #tit1 {
+      text-align: center;
+  }
+  #foot {
+    margin-left: 40px; 
+  }
+  
+}
+@media only screen and (min-width: 600px) {
+  /* Styles for screens larger than 600px (non-phone screens like laptops) */
+  #foot {
+    margin-left: 400px; 
+  }
+  
 }
 
 body {
@@ -9006,7 +9059,7 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       content: '';
-      width: 30px;
+      width: 70px;
       height: 1px;
       background: #ffbd39;
       margin: 0 auto; }
